@@ -1,49 +1,96 @@
 /* RESET DO CSS */
 * {
-  margin: 0px; /* espaçamento fora do texto */
-  padding: 0; /* espaçaento dentro da caixa de texto ( preenchimento*/
-  box-sizing: border-box;
-}
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  
+  header {
+    /* Gradiente no header: transição do azul mais escuro para o mais claro */
+    background: linear-gradient(to right, #002C63, #0057B8);
+    padding: 80px;
+    color: #A2B2C1; /* Cinza Claro para o texto */
+    text-align: center;
+  }
+  
+  main {
+    /* Gradiente no fundo principal: de cima para baixo, usando tons de cinza */
+    background: linear-gradient(to bottom, #003a91, #002249);
+    flex: 1;
+    padding: 40px 38px;
+    color: #A2B2C1; /* Cinza Claro para o texto */
+  }
+  
+  #sobre-mim {
+    display: block;
+    background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px;
+    color: #A2B2C1; /* Cinza Claro para o texto dentro da caixa */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    margin-bottom: 40px;
+  }
+  
+  #titulo-sobre-mim {
+    font-size: 26px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #0057B8; /* Azul Vibrante para a borda */
+  }
+  
+  .texto-sobre-mim {
+      font-size: 15px;
+    }
+    
+    #meus-hobbies {
+        background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
+        width: 80%;
+        margin: 0 auto;
+        padding: 30px;
+        color: #A2B2C1; /* Cinza Claro para o texto dentro da caixa */
+        border-radius: 25px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        margin-bottom: 16px;
+    }
+    
+    #titulo-meus-hobbies {
+      font-size: 26px;
+      margin-bottom: 16px;
+      padding: 0px;
+      display: flex;
+      gap: 12px;
+     
+    }
+    
+    ul{
+        list-style: none;
+        padding: 8px;
+        display: flex;
+        gap: 12px;
+    }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  line-height: 1.6;
-}
+    li{
+        background-color:#102135;
+        padding: 8px;
+        border-radius: 6px;
+        font-size: 16px;
+        min-width: 250px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
 
-header {
-  background-color: #000000;
-  padding: 80px;
-  color: #f0f8ff;
-  text-align: center;
-}
-
-main {
-  background-color: #7d8597;
-  flex: 1;
-  padding: 40px 38px;
-}
-
-#sobre-mim {
-  display: block;
-  background-color: #33415c;
-  width: 80%;
-  margin: 0 auto;
-  padding: 40px;
-  color: #979dac;
-  border-radius: 25px;
-
-}
-
-#titulo-sobre-mim {
- font-size: 26px;
- margin-bottom: 16px ; 
- border-bottom: 2px solid rgb(255, 255, 255)
- 
-}
-
-.texto-sobre-mim {
-    font-size: 15px;
-}
+    li:hover{
+        background-color:#0057B8;
+        color:#A2B2C1;
+        font-style: unset;
+        transform: translateY(-5px);
+        transition: all 0.3s ease;
+    }
