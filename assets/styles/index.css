@@ -5,35 +5,34 @@
     margin: 0px;
     padding: 0;
     box-sizing: border-box;
-  }
+}
   
-  body {
+body {
     font-family: Raleway , Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     line-height: 1.6;
-  }
+}
   
-  header {
+header {
     /* Gradiente no header: transição do azul mais escuro para o mais claro */
     background: linear-gradient(to right, #002C63, #0057B8);
     padding: 80px;
     color: #A2B2C1; /* Cinza Claro para o texto */
     text-align: center;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
-  }
-
-  
-  main {
+}
+ 
+main {
     /* Gradiente no fundo principal: de cima para baixo, usando tons de cinza */
     background: linear-gradient(to bottom, #003a91, #002249);
     flex: 1;
     padding: 40px 38px;
     color: #A2B2C1; /* Cinza Claro para o texto */
-  }
+}
   
-  #sobre-mim {
+#sobre-mim {
     display: block;
     background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
     width: 80%;
@@ -43,19 +42,19 @@
     border-radius: 25px;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 40px;
-  }
+}
   
-  #titulo-sobre-mim {
+#titulo-sobre-mim {
     font-size: 26px;
     margin-bottom: 16px;
     border-bottom: 2px solid #0057B8; /* Azul Vibrante para a borda */
-  }
+}
   
-  .texto-sobre-mim {
+.texto-sobre-mim {
     font-size: 15px;
-  }
+}
   
-  #meus-hobbies {
+#meus-hobbies {
     background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
     width: 80%;
     margin: 0 auto;
@@ -64,42 +63,41 @@
     border-radius: 25px;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 48px;
-  }
+}
   
-  #titulo-meus-hobbies {
+#titulo-meus-hobbies {
     font-size: 26px;
     margin-bottom: 16px;
     padding: 0px;
     display: flex;
     gap: 12px;
-    
-  }
+}
   
-  ul{
+ul{
     list-style: none;
     padding: 8px;
     display: flex;
     gap: 12px;
-  }
+}
   
-  li{
+li{
     background-color:#102135;
     padding: 8px;
     border-radius: 6px;
     font-size: 16px;
     min-width: 250px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-  }
+}
   
-  li:hover{
+li:hover{
     background-color:#0057B8;
     color:#A2B2C1;
     font-style: unset;
     transform: translateY(-5px);
     transition: all 0.3s ease;
-  }
+}
   
-  #contato {
+#contato {
     background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
     width: 80%;
     margin: 0 auto;
@@ -108,11 +106,10 @@
     border-radius: 25px;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 48px;
-    ;
-  }
+}
   
   
-  #titulo-contato {
+#titulo-contato {
     text-align: center;
     font-size: 26px;
     margin-bottom: 16px;
@@ -120,7 +117,7 @@
     display: flex;
     justify-content: center;
     gap: 12px;
-  }
+}
 
 #contato p{
   text-align: center ;
@@ -144,21 +141,67 @@
   transition: all 0.3s ease;
  }
 
- footer {
+footer {
   background: linear-gradient(to right, #002C63, #0057B8);
   padding: 30px;
   color: #A2B2C1; /* Cinza Claro para o texto */
   text-align: center;
-  
- }
+}
 
- #mudar-pagina {
+#mudar-pagina {
   padding: 10px;
   border-color: 2px #f0f8ff;
   display: flex;
   justify-content: center;
   font-size: 20px;
   color: #f0f8ff;
- }
+}
 
- 
+/* ================================== */
+/* ESTILOS RESPONSIVOS       */
+/* ================================== */
+
+@media (max-width: 768px) {
+    /* Ajusta o padding do cabeçalho e do corpo principal */
+    header {
+        padding: 40px 20px;
+    }
+
+    main {
+        padding: 20px 10px;
+    }
+
+    /* Aumenta a largura das seções para ocupar mais espaço na tela */
+    #sobre-mim,
+    #meus-hobbies,
+    #contato {
+        width: 95%;
+        padding: 25px;
+    }
+
+    /* Ajusta o tamanho dos títulos */
+    #titulo-sobre-mim,
+    #titulo-meus-hobbies,
+    #titulo-contato {
+        font-size: 22px;
+    }
+
+    /* Empilha a lista de hobbies verticalmente */
+    ul {
+        flex-direction: column;
+        align-items: center; /* Centraliza os itens na coluna */
+    }
+
+    /* Garante que os itens da lista ocupem a largura disponível */
+    li {
+        min-width: 80%;
+        text-align: center;
+    }
+    
+    /* Empilha os links de contato verticalmente para facilitar o clique */
+    #contato a {
+        display: block; /* Faz cada link ocupar uma linha inteira */
+        margin: 10px auto; /* Adiciona margem vertical e centraliza */
+        width: 70%; /* Define uma largura para os botões */
+    }
+}
