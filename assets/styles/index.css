@@ -23,6 +23,7 @@
     text-align: center;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
   }
+
   
   main {
     /* Gradiente no fundo principal: de cima para baixo, usando tons de cinza */
@@ -127,8 +128,8 @@
 
  #contato a{
   text-decoration: none;
-  padding: 8px;
-  margin: 0 0.5rem;
+  padding: 9px;
+  margin: 0 1rem;
   border: 2px solid #f0f8ff;
   border-radius: 25px;
   color: #f0f8ff;
@@ -139,7 +140,6 @@
 #contato a:hover{
   background-color: #f0f8ff;
   color: #0057B8;
-  font-style: unset;
   transform: translateY(-2px);
   transition: all 0.3s ease;
  }
@@ -151,4 +151,14 @@
   text-align: center;
   
  }
+
+ #mudar-pagina {
+  padding: 10px;
+  border-color: 2px #f0f8ff;
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  color: #f0f8ff;
+ }
+
  
