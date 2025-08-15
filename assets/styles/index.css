@@ -1,4 +1,6 @@
 /* RESET DO CSS */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0px;
     padding: 0;
@@ -6,7 +8,7 @@
   }
   
   body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Raleway , Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -37,7 +39,7 @@
     padding: 40px;
     color: #A2B2C1; /* Cinza Claro para o texto dentro da caixa */
     border-radius: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
     margin-bottom: 40px;
   }
   
@@ -48,49 +50,97 @@
   }
   
   .texto-sobre-mim {
-      font-size: 15px;
-    }
+    font-size: 15px;
+  }
+  
+  #meus-hobbies {
+    background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    color: #A2B2C1; /* Cinza Claro para o texto dentro da caixa */
+    border-radius: 25px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 48px;
+  }
+  
+  #titulo-meus-hobbies {
+    font-size: 26px;
+    margin-bottom: 16px;
+    padding: 0px;
+    display: flex;
+    gap: 12px;
     
-    #meus-hobbies {
-        background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
-        width: 80%;
-        margin: 0 auto;
-        padding: 30px;
-        color: #A2B2C1; /* Cinza Claro para o texto dentro da caixa */
-        border-radius: 25px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-        margin-bottom: 16px;
-    }
-    
-    #titulo-meus-hobbies {
-      font-size: 26px;
-      margin-bottom: 16px;
-      padding: 0px;
-      display: flex;
-      gap: 12px;
-     
-    }
-    
-    ul{
-        list-style: none;
-        padding: 8px;
-        display: flex;
-        gap: 12px;
-    }
+  }
+  
+  ul{
+    list-style: none;
+    padding: 8px;
+    display: flex;
+    gap: 12px;
+  }
+  
+  li{
+    background-color:#102135;
+    padding: 8px;
+    border-radius: 6px;
+    font-size: 16px;
+    min-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  }
+  
+  li:hover{
+    background-color:#0057B8;
+    color:#A2B2C1;
+    font-style: unset;
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+  }
+  
+  #contato {
+    background-color: #18314e; /* Azul Marinho Escuro sólido para destacar a seção */
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    color: #A2B2C1; /* Cinza Claro para o texto dentro da caixa */
+    border-radius: 25px;
+    box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.4);
+    margin-bottom: 48px;
+    ;
+  }
+  
+  
+  #titulo-contato {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 16px;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+  }
 
-    li{
-        background-color:#102135;
-        padding: 8px;
-        border-radius: 6px;
-        font-size: 16px;
-        min-width: 250px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-    }
+#contato p{
+  text-align: center ;
+}
 
-    li:hover{
-        background-color:#0057B8;
-        color:#A2B2C1;
-        font-style: unset;
-        transform: translateY(-5px);
-        transition: all 0.3s ease;
-    }
+ #contato a{
+  text-decoration: none;
+  padding: 10px;
+  margin: 0 0.5rem;
+  border: 2px solid #f0f8ff;
+  border-radius: 15px;
+  color: #f0f8ff;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+#contato a:hover{
+  background-color: #f0f8ff;
+  color: #0057B8;
+  font-style: unset;
+  transform: translateY(-2px);
+  transition: all 0.3s ease;
+ }
+
+ 
